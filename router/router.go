@@ -6,11 +6,11 @@ import (
 )
 
 type Router struct {
-	authController authController.AuthController
+	authController *authController.AuthController
 	_              any
 }
 
-func NewRouter(authcontroller authController.AuthController) *Router {
+func NewRouter(authcontroller *authController.AuthController) *Router {
 	return &Router{
 		authController: authcontroller,
 	}
