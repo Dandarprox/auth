@@ -1,0 +1,20 @@
+@name=login
+@baseUrl=http://localhost:8080
+
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "email": "asda@asdad.com",
+  "password": "123"
+}
+
+###
+
+POST {{baseUrl}}/sigin
+Content-Type: application/json
+
+{
+  "email": "asda@asdad.com",
+  "password": "123"
+}
